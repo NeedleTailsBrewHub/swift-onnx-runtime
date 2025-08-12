@@ -9,14 +9,11 @@ let package = Package(
         .macOS(.v13),
     ],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "SwiftONNXRuntime",
-            targets: ["SwiftONNXRuntime"])
+            name: "CONNX",
+            targets: ["CONNX"])
     ],
     targets: [
-        .target(name: "SwiftONNXRuntime"),
-        // C target for ONNX Runtime headers
         .target(
             name: "CONNX",
             path: "Sources/CONNX",
